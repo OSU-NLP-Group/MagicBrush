@@ -1,6 +1,16 @@
-# MagicBrush
+# MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing
 
-This is the repository that contains source code for the [MagicBrush website](https://osu-nlp-group.github.io/MagicBrush/).
+Dataset, code, and models for MagicBrush (Will release arXiv soon).
 
-# Website License
-<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+Release process:
+
+- [x] Dataset
+- [ ] Code for Evaluation
+- [ ] Models
+
+## Dataset Summary
+
+MagicBrush is the first large-scale, manually-annotated instruction-guided image editing dataset covering diverse scenarios single-turn, multi-turn, mask-provided, and mask-free editing. MagicBrush comprises 10K (source image, instruction, target image) triples, which is sufficient to train large-scale image editing models.
+
+Please check our [website](https://osu-nlp-group.github.io/MagicBrush/) to explore the dataset.
+
