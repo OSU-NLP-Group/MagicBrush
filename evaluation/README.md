@@ -26,7 +26,6 @@ python image_eval.py \
 --caption_path ./test/global_captions.json
 ```
 
-
 the structure of `testResults` should be like:
 ```
 .

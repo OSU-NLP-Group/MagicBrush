@@ -5,7 +5,7 @@ Dataset, code, and models for MagicBrush (Will release arXiv soon).
 Release process:
 
 - [x] Dataset
-- [ ] Code for Evaluation
+- [x] Code for Evaluation
 - [ ] Models
 
 ## Dataset Summary
