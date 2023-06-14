@@ -1,6 +1,6 @@
 Copyright: Kai Zhang, Lingbo Mo, Wenhu Chen, Huan Sun, and Yu Su.
-The Code and dataset are released under CC-BY-4.0.
-The model is released under CreativeML Open RAIL-M inherited from stable diffusion and Instruct PixPix. Please refer to their license for more details.
+The evaluation code and dataset are released under CC-BY-4.0.
+The model is released under CreativeML Open RAIL-M inherited from stable diffusion and Instruct PixPix. Please refer to their licenses for more details.
 
 CC-BY-4.0:
 Attribution 4.0 International
