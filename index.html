@@ -39,6 +39,46 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
+
+  <style>
+    .slideshow-container {
+      position: relative;
+      width: 100%;
+      max-width: 600px; /* Adjust this to your desired width */
+      margin: 0 auto;
+    }
+
+    .slide {
+      display: none;
+    }
+
+    .slide img {
+      width: 100%;
+      height: auto;
+    }
+
+    .move-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.3);
+      color: #fff;
+      font-size: 24px;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      display: none;
+    }
+
+    .move-button.left {
+      left: 10px;
+    }
+
+    .move-button.right {
+      right: 10px;
+    }
+  </style>
+
 </head>
 <body>
 
@@ -247,13 +287,37 @@
       </div>
       <!--/ Dataset Comparison. -->
     </section>
+
   
     <section class="section">
+
       <div class="container is-max-desktop">
         <!-- Dataset Overview. -->
         <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <h2 class="title is-3">Dataset Overview</h2>
+            <h2 class="title is-3">Dataset Overview</h2> <br>
+
+            <div class="slideshow-container" onmouseenter="showButtons()" onmouseleave="hideButtons()">
+              <div class="slide">
+                <img src="static/images/example_1.png" alt="Image 1">
+              </div>
+              <div class="slide">
+                <img src="static/images/example_2.png" alt="Image 2">
+              </div>
+              <div class="slide">
+                <img src="static/images/example_3.png" alt="Image 3">
+              </div>
+              <div class="slide">
+                <img src="static/images/example_4.png" alt="Image 4">
+              </div>
+              <div class="slide">
+                <img src="static/images/example_5.png" alt="Image 5">
+              </div>
+
+              <button class="move-button left" onclick="changeSlide(-1)">&#10094;</button>
+              <button class="move-button right" onclick="changeSlide(1)">&#10095;</button>
+            </div> <br>
+
             <div class="content has-text-justified">
             <p>
 
@@ -338,6 +402,54 @@
     </div>
   </div>
 </footer>
+
+  <script>
+    let slideIndex = 1;
+    let timer;
+
+    showSlides(slideIndex);
+    startTimer();
+
+    function changeSlide(n) {
+      clearInterval(timer);
+      showSlides(slideIndex += n);
+      startTimer();
+    }
+
+    function showSlides(n) {
+      const slides = document.getElementsByClassName("slide");
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+    }
+
+    function showButtons() {
+      const buttons = document.getElementsByClassName("move-button");
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].style.display = "block";
+      }
+    }
+
+    function hideButtons() {
+      const buttons = document.getElementsByClassName("move-button");
+      for (let i = 0; i < buttons.length; i++) {
+        buttons[i].style.display = "none";
+      }
+    }
+
+    function startTimer() {
+      timer = setInterval(() => {
+        changeSlide(1);
+      }, 4000); // Adjust the delay (in milliseconds) between slides
+    }
+  </script>
 
 </body>
 </html>
