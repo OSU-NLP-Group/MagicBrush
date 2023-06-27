@@ -57,13 +57,14 @@ Then go back to the root folder and set up the running env following the [Instru
 python edit_cli.py --input [YOUR_IMG_PATH] --output imgs/output.jpg --edit "EDIT INSTRUCTION" --ckpt checkpoints/MagicBrush-epoch-000168.ckpt
  
 # Our model is fine-tuned for fine-grained real image editing. Therefore, it may not perform well on style transfer or other editings on large region.
-# e.g. python edit_cli.py --input imgs/example.jpg --output imgs/output.jpg --edit "let him wear a black T-shirt" --ckpt checkpoints/MagicBrush-epoch-000168.ckpt
+# e.g. python edit_cli.py --input imgs/example.jpg --output imgs/output.jpg --edit "let him wear a pair of sun glasses" --ckpt checkpoints/MagicBrush-epoch-000168.ckpt
 ```
 
 <div style="display: flex; justify-content: center;">   
   <img src="https://s2.loli.net/2023/06/22/BwOuzhFTXCSlZym.jpg" alt="Source Image" style="width:40%; margin-right: 50px;">   
-  <img src="https://s2.loli.net/2023/06/22/Nl21EFPWg4UaOQx.jpg" alt="Target Image" style="width:40%;"> 
+  <img src="https://s2.loli.net/2023/06/27/91oPIE3jlWMB7TF.jpg" alt="Target Image" style="width:40%;"> 
 </div>
+
 
 #### Run the interactive editing Gradio app:
 
