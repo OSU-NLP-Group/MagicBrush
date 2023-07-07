@@ -5,7 +5,7 @@ Dataset, code, and models for [MagicBrush](https://arxiv.org/abs/2306.10012).
 Check [project website](https://osu-nlp-group.github.io/MagicBrush/) for demos and data examples.
 
 ## News:
-Jul 7: We upload a better checkpoint findtuned on MagicBrush found recently. named MagicBrush-epoch-52-step-4999.ckpt!
+- Jul 7-23: We upload a better checkpoint findtuned on MagicBrush found recently: `MagicBrush-epoch-52-step-4999.ckpt`, enjoy!
 
 ## Dataset Summary
 
