@@ -5,7 +5,8 @@ Dataset, code, and models for [MagicBrush](https://arxiv.org/abs/2306.10012).
 Check [project website](https://osu-nlp-group.github.io/MagicBrush/) for demos and data examples.
 
 ## News:
-- Jul 7-23: We upload a better checkpoint findtuned on MagicBrush found recently: `MagicBrush-epoch-52-step-4999.ckpt`, enjoy!
+- Sept 2023: MagicBrush was accepted to NeurIPS 2023 Datasets and Benchmarks.
+- Jul 2023: We uploaded a better checkpoint findtuned on MagicBrush found recently: `MagicBrush-epoch-52-step-4999.ckpt`.
 
 ## Dataset Summary
 
@@ -72,7 +73,7 @@ python edit_cli.py --input [YOUR_IMG_PATH] --output imgs/output.jpg --edit "EDIT
 python edit_app.py --ckpt checkpoints/MagicBrush-epoch-52-step-4999.ckpt
 ```
 
-### Load in Diffusers.
+## Load in Diffusers
 Thanks the community for the help, now we can also load MagicBrush models via diffusers:
 
 Please check: [MagicBrush-Paper](https://huggingface.co/vinesmsuic/magicbrush-paper) and [MagicBrush-Jul17](https://huggingface.co/vinesmsuic/magicbrush-jul7)
