@@ -84,12 +84,10 @@ Please check: [MagicBrush-Paper](https://huggingface.co/vinesmsuic/magicbrush-pa
 If you find this dataset or the fine-tuned checkpoint useful, please consider citing our paper:
 
 ```
-@misc{Zhang2023MagicBrush,
-      title={MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing}, 
-      author={Kai Zhang and Lingbo Mo and Wenhu Chen and Huan Sun and Yu Su},
-      year={2023},
-      eprint={2306.10012},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{Zhang2023MagicBrush,
+title={MagicBrush: A Manually Annotated Dataset for Instruction-Guided Image Editing},
+author={Kai Zhang and Lingbo Mo and Wenhu Chen and Huan Sun and Yu Su},
+booktitle={Advances in Neural Information Processing Systems},
+year={2023}
 }
 ```
