@@ -5,7 +5,7 @@ model:
   base_learning_rate: 1e-04
   target: ldm.models.diffusion.ddpm_edit.LatentDiffusion
   params:
-    ckpt_path: /mnt/Xsky/syx/model/instruct_pix2pix/stable_diffusion/models/ldm/stable-diffusion-v1/v1-5-pruned-emaonly.ckpt
+    ckpt_path: [TODO]
     linear_start: 0.00085
     linear_end: 0.0120
     num_timesteps_cond: 1
@@ -82,7 +82,7 @@ data:
     train:
       target: edit_dataset.EditDataset
       params:
-        path: /mnt/Xsky/syx/dataset/image_editing/data_own/finetune_data
+        path: [TODO]
         split: train
         min_resize_res: 256
         max_resize_res: 256
@@ -91,7 +91,7 @@ data:
     validation:
       target: edit_dataset.EditDataset
       params:
-        path: /mnt/Xsky/syx/dataset/image_editing/data_own/finetune_data
+        path: [TODO]
         split: val
         min_resize_res: 256
         max_resize_res: 256
